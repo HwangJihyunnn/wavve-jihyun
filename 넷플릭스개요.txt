@@ -1,0 +1,46 @@
+라우터  -> react-router-dom
+- 페이지간의 연결
+- home/detail/ search
+- navigation - > Link
+
+- 리덕스
+   props()의 특성상 부모가 자식에게만 전달할 수 있는 불편함과 프로그램의 효율성을 높이기 위해서 양방향/자식이 부모에게 값을 전달할 수 있는 라이브러리
+useDispatch(action: type(액션명-대문자로 선언), payload:{})
+---> reducer(액션 처리기)
+        --> 저장소의 초기화 initialState로 store의 저장될 값을 초기화
+        --> switch 구문으로 액션명령을 처리
+
+---> store(최종저장소)  -----> 저장된 값을 다시 호출할 때 useSelector
+
+- 리덕스 미들웨어
+   --> API를 사용할 경우 요청한 자료가 도달하는 시간이 필요
+   --> 동기식으로 처리되는 리덕스는 이 문제를 해결할 수 없기 때문에
+          비동기식으로 처리해주는 리덕스 미들웨어가 추가됨
+   --> 여러개의 reducer를 병합해서 선언가능 --> combine reducer
+   --> thunk
+
+--  redux-devtools-extension
+
+-- API 를 데이터를 호출하는 방식 
+1) fetch
+2) Ajax
+3) axios
+
++++ 설치과정 +++
+1) npx create-react-app 폴더명
+2) cd 폴더명
+3) npm i react-router-dom
+4) npm install redux
+5) npm install redux@4.1.2 react-redux
+6) npm install redux-thunk
+7) npm install --save redux-devtools-extension
+8) npm install react-bootstrap bootstrap
+
+
+
+
+
+
+
+
+
